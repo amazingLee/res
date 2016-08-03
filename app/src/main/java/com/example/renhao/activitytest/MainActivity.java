@@ -18,7 +18,8 @@ public class MainActivity extends ListActivity implements AdapterView.OnItemClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String[] s = new String[]{
-                "PreferenceActivity"
+                "PreferenceActivity",
+                "FragmentActivity"
         };
         activitys = Arrays.asList(s);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
