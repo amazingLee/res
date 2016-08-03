@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="基本信息">
+        <EditTextPreference
+            android:key="username_key"
+            android:title="用户名"
+            android:hint="请输入用户名"
+            android:dialogIcon="@mipmap/ic_launcher"
+            android:dialogTitle="用户名"
+            />
+        <ListPreference
+            android:key="sex_key"
+            android:title="性别"
+            android:defaultValue="男"
+            android:entries="@array/list_sex"
+            android:entryValues="@array/list_sex"
+            />
+        <ListPreference
+            android:key="list_key"
+            android:defaultValue="list key default value"
+            android:title="list title"
+            android:summary="list_summary"
+            android:entries="@array/list_preference"
+            android:entryValues="@array/list_preference"
+            android:dialogTitle="list_dialog_title" />
+        <PreferenceScreen android:title="更多选项">
+            <CheckBoxPreference
+                android:key="cb21"
+                android:title="功能1"
+                android:summaryOn="开启"
+                android:summaryOff="关闭"
+                android:defaultValue="true"
+                />
+            <CheckBoxPreference
+                android:key="cb22"
+                android:title="功能2"
+                android:summaryOn="使用"
+                android:summaryOff="停用"
+                android:defaultValue="true"
+                />
+            <EditTextPreference
+                android:key="et1"
+                android:title="EditTextPreference Sample"
+                android:summary="点击输入"
+                android:dialogTitle="输入设置"
+                android:defaultValue="Hello EditTextPreference"
+                />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Second Category">
+        <EditTextPreference
+            android:key="edittext_key"
+            android:defaultValue="edit default value"
+            android:icon="@mipmap/ic_launcher"
+            android:summary="edit summary"
+            android:title="edit title" />
+        <CheckBoxPreference
+            android:key="checkbox_key"
+            android:defaultValue="checkbox default value"
+            android:summary="checkbox summary"
+            android:title="checkbox title"
+            />
+        <EditTextPreference
+            android:key="num_key"
+            android:defaultValue="0"
+            android:summary="edit summary"
+            android:numeric="integer"
+            android:title="input number" />
+    </PreferenceCategory>
+</PreferenceScreen>
